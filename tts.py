@@ -58,7 +58,7 @@ def _reproduzir(caminho: str) -> None:
 
 def listar_idiomas() -> None:
     """Imprime os idiomas disponíveis."""
-    print("\n📢 Idiomas suportados:")
+    print("\n Idiomas suportados:")
     for nome, cod in IDIOMAS.items():
         print(f"   {nome:<12} → '{cod}'")
     print()
