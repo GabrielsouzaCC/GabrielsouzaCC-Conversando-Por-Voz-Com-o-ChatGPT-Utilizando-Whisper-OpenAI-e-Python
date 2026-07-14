@@ -1,0 +1,22 @@
+# Variáveis de ambiente (NUNCA commitar)
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Áudios temporários
+*.mp3
+*.wav
+
+# IDEs
+.vscode/
+.idea/
+*.DS_Store
