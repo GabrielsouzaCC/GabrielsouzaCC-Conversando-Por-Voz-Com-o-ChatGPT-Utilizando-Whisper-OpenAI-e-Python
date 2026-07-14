@@ -2,7 +2,7 @@
 
 Converse **por voz** com o ChatGPT em múltiplos idiomas, diretamente pelo terminal.
 
-> Projeto desenvolvido como desafio da [DIO](https://www.dio.me) — Bootcamp de IA com Python.
+> Projeto desenvolvido como desafio da [DIO](https://www.dio.me) — Bradesco - GenAI & Dados
 
 ---
 
