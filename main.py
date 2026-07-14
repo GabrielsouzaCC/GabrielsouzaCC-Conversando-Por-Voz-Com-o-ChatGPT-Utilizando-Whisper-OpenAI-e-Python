@@ -22,7 +22,7 @@ FALA_LENTA       = False         # True = TTS mais devagar
 
 def banner() -> None:
     print("\n" + "═" * 54)
-    print("   🤖  Voice ChatGPT  │  Whisper + GPT + gTTS")
+    print(" Voice ChatGPT  │  Whisper + GPT + gTTS")
     print("═" * 54)
     print(f"   Idioma  : {IDIOMA.upper()}")
     print(f"   Gravação: {SEGUNDOS_GRAVACAO}s por pergunta")
@@ -44,7 +44,7 @@ def main() -> None:
         # ── Comandos especiais ──────────────────
         if cmd == "sair":
             limpar_historico()
-            print("\n👋 Até logo!\n")
+            print("\n Até logo!\n")
             break
 
         if cmd == "idiomas":
@@ -53,7 +53,7 @@ def main() -> None:
 
         if cmd == "limpar":
             limpar_historico()
-            print("🗑️  Histórico apagado. Nova conversa iniciada.\n")
+            print("Histórico apagado. Nova conversa iniciada.\n")
             continue
 
         # ── Pipeline de voz ─────────────────────
@@ -65,25 +65,25 @@ def main() -> None:
             pergunta = transcrever(audio, sr)
 
             if not pergunta.strip():
-                print("⚠️  Não consegui entender. Tente novamente.\n")
+                print("Não consegui entender. Tente novamente.\n")
                 continue
 
-            print(f"📝 Você disse  : {pergunta}")
+            print(f"Você disse  : {pergunta}")
 
             # 3. Consulta o ChatGPT
             resposta = perguntar(pergunta, idioma_resposta=IDIOMA)
             trocas   = resumo_historico()
-            print(f"🤖 ChatGPT     : {resposta}")
+            print(f"ChatGPT     : {resposta}")
             print(f"   (troca #{trocas} da sessão)\n")
 
             # 4. Sintetiza voz com gTTS
             falar(resposta, idioma=IDIOMA, lento=FALA_LENTA)
 
         except KeyboardInterrupt:
-            print("\n⏹️  Interrompido.\n")
+            print("\n Interrompido.\n")
             break
         except Exception as e:
-            print(f"❌ Erro: {e}\n")
+            print(f"Erro: {e}\n")
 
 
 if __name__ == "__main__":
