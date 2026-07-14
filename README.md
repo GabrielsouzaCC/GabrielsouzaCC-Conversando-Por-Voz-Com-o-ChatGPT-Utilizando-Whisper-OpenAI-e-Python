@@ -1,4 +1,4 @@
-# 🤖 Voice ChatGPT — Whisper + GPT + gTTS
+#  Voice ChatGPT — Whisper + GPT + gTTS
 
 Converse **por voz** com o ChatGPT em múltiplos idiomas, diretamente pelo terminal.
 
@@ -6,22 +6,22 @@ Converse **por voz** com o ChatGPT em múltiplos idiomas, diretamente pelo termi
 
 ---
 
-## 🏗️ Arquitetura
+##  Arquitetura
 
 ```
 Microfone
     │
     ▼
-🎙️ Gravação (sounddevice)
+ Gravação (sounddevice)
     │
     ▼
-📝 Transcrição (OpenAI Whisper)
+ Transcrição (OpenAI Whisper)
     │
     ▼
-🧠 Resposta (OpenAI GPT-3.5-turbo)
+ Resposta (OpenAI GPT-3.5-turbo)
     │
     ▼
-🔊 Síntese de voz (Google TTS)
+ Síntese de voz (Google TTS)
     │
     ▼
 Alto-falante
@@ -29,20 +29,19 @@ Alto-falante
 
 ---
 
-## ✨ Diferenciais deste projeto
+##  Diferenciais deste projeto
 
 | Recurso | Descrição |
 |---------|-----------|
-| 🧠 Memória de conversa | O ChatGPT lembra o contexto da sessão inteira |
-| 🌍 10 idiomas no TTS | PT, EN, ES, FR, DE, IT, JA, ZH, RU, AR |
-| 🖥️ Multi-plataforma | Windows, Linux e macOS |
-| 🔐 Chave segura | API key via `.env`, nunca no código |
-| 🗂️ Arquitetura modular | `stt.py`, `llm.py`, `tts.py` separados |
+|  Memória de conversa | O ChatGPT lembra o contexto da sessão inteira |
+|  10 idiomas no TTS | PT, EN, ES, FR, DE, IT, JA, ZH, RU, AR |
+|  Multi-plataforma | Windows, Linux e macOS |
+|  Chave segura | API key via `.env`, nunca no código |
+|  Arquitetura modular | `stt.py`, `llm.py`, `tts.py` separados |
 | ⌨️ Comandos no terminal | `limpar`, `idiomas`, `sair` |
-
 ---
 
-## 🚀 Como rodar
+##  Como rodar
 
 ### 1. Clone o repositório
 ```bash
@@ -78,7 +77,7 @@ python src/main.py
 
 ---
 
-## 🎮 Comandos disponíveis
+##  Comandos disponíveis
 
 | Comando | Ação |
 |---------|------|
@@ -89,7 +88,7 @@ python src/main.py
 
 ---
 
-## 🌍 Idiomas suportados
+##  Idiomas suportados
 
 | Nome | Código |
 |------|--------|
@@ -108,7 +107,7 @@ Para trocar o idioma, edite a variável `IDIOMA` no topo do `src/main.py`.
 
 ---
 
-## 🛠️ Tecnologias
+##  Tecnologias
 
 - [OpenAI Whisper](https://openai.com/research/whisper) — reconhecimento de fala
 - [OpenAI GPT-3.5-turbo](https://platform.openai.com/docs/models) — modelo de linguagem
@@ -118,7 +117,7 @@ Para trocar o idioma, edite a variável `IDIOMA` no topo do `src/main.py`.
 
 ---
 
-## 📁 Estrutura do projeto
+##  Estrutura do projeto
 
 ```
 voice-chatgpt/
@@ -135,14 +134,9 @@ voice-chatgpt/
 
 ---
 
-## 📚 Referências
+##  Referências
 
 - [Artigo DIO — Conversando por voz com o ChatGPT](https://web.dio.me/articles/conversando-por-voz-com-o-chatgpt-utilizando-whisper-openai-e-python)
 - [Código original no Google Colab](https://bit.ly/41XfKaM)
 - [Live no YouTube da DIO](https://bit.ly/44e9Nrw)
 
----
-
-## 📝 Licença
-
-MIT © 2024
