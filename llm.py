@@ -2,7 +2,6 @@
 llm.py — Integração com ChatGPT (OpenAI GPT-3.5-turbo)
 Mantém histórico de conversa para contexto multi-turno.
 """
-
 import openai
 import os
 
