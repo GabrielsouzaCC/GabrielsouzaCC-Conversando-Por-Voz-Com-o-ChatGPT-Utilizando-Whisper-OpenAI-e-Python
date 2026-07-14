@@ -13,7 +13,7 @@ client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def gravar_audio(segundos: int = 5, sample_rate: int = 16000) -> tuple:
     """Grava áudio do microfone e retorna o array de amostras."""
-    print(f"🎙️  Gravando por {segundos}s... fale agora!")
+    print(f"Gravando por {segundos}s... fale agora!")
     audio = sd.rec(
         int(segundos * sample_rate),
         samplerate=sample_rate,
@@ -21,7 +21,7 @@ def gravar_audio(segundos: int = 5, sample_rate: int = 16000) -> tuple:
         dtype="float32"
     )
     sd.wait()
-    print("✅ Gravação concluída.\n")
+    print("Gravação concluída.\n")
     return audio, sample_rate
 
 
